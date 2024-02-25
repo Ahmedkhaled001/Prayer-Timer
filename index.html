@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Times</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="main">
+        <div id="header">
+            <h1>Prayer Times</h1>
+            <div id="cityChoose">
+                <h4>CITY :</h4>
+                <div>
+                    <select name="CAIRO" id="selectBox" class="select-box">
+                    </select>
+                </div>
+            </div>
+            
+            <div>
+                <h1 id="cityName">CAIRO</h1>
+            </div>
+            <div id="allTimes">
+                <div  class="all-times">
+                    <h2>Fajr</h2>
+                    <h3 id="fajrTime"></h3>
+                </div>
+                <div id="sunrise" class="all-times">
+                    <h2>Sunrise</h2>
+                    <h3 id="sunriseTime"></h3>
+                </div>
+                <div  class="all-times">
+                    <h2>Dhuhr</h2>
+                    <h3 id="dhuhrTime"></h3>
+                </div>
+                <div  class="all-times">
+                    <h2>Asr</h2>
+                    <h3 id="asrTime"></h3>
+                </div>
+                <div  class="all-times">
+                    <h2>Maghrib</h2>
+                    <h3 id="maghribTime"></h3>
+                </div>
+                <div  class="all-times">
+                    <h2>Isha</h2>
+                    <h3 id="ishaTime"></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="main.js"></script>
+
+</body>
+</html>
