@@ -27,19 +27,15 @@ document.getElementById("selectBox").addEventListener("change", function(){
 }
 )
 
-/*
-else if(this.value == "ASWAN"){
-        getPrayerTimes("Aswān")
-    }
-*/
-
 function getPrayerTimes(cityName){
     let params = {
         country: "EG",
         city: cityName
     }
     
-        axios.get('http://api.aladhan.com/v1/timingsByCity/:date', {
+    let url = "http://api.aladhan.com/v1/timingsByCity/:date"
+
+        axios.get(url , {
             params: params
         })
         .then(function (response) {
@@ -53,7 +49,7 @@ function getPrayerTimes(cityName){
         })
         .catch(function (error) {
             console.log(error);
-        }) 
+        })
     
 }
 
