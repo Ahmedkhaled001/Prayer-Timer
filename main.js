@@ -33,7 +33,7 @@ function getPrayerTimes(cityName){
         city: cityName
     }
     
-    let url = "http://api.aladhan.com/v1/timingsByCity/:date"
+    let url = "https://api.aladhan.com/v1/timingsByCity/:date"
 
         axios.get(url , {
             params: params
