@@ -2,7 +2,7 @@ getPrayerTimes("Al Qāhirah")
 
 
 // for download axios ---> npm install axios --save
-let cities = ["CAIRO", "ALEXANDRIA", "MATROUH", "ASWAN", "SHARM ELSHEIKH"]
+let cities = ["CAIRO", "ALEXANDRIA", "MATROUH", "ASWAN", "SHARM ELSHEIKH", "BENI SUEF"]
     
 for(city of cities){
     let content = `
@@ -23,6 +23,8 @@ document.getElementById("selectBox").addEventListener("change", function(){
         getPrayerTimes("Aswān")
     }else if(this.value == "SHARM ELSHEIKH"){
         getPrayerTimes("Al Baḩr al Aḩmar")
+    }else if(this.value == "BENI SUEF"){
+        getPrayerTimes("Bani Suwayf")
     }
 }
 )
